@@ -13,7 +13,24 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'inter': ['Inter', 'sans-serif'],
+        'oswald': ['Oswald', 'sans-serif'],
+      },
       colors: {
+        // Club specific colors
+        'club-primary': 'hsl(var(--club-primary))',
+        'club-primary-dark': 'hsl(var(--club-primary-dark))',
+        'club-secondary': 'hsl(var(--club-secondary))',
+        'club-accent': 'hsl(var(--club-accent))',
+        'club-success': 'hsl(var(--club-success))',
+        'club-warning': 'hsl(var(--club-warning))',
+        'club-danger': 'hsl(var(--club-danger))',
+        'background-secondary': 'hsl(var(--background-secondary))',
+        'background-dark': 'hsl(var(--background-dark))',
+        'foreground-muted': 'hsl(var(--foreground-muted))',
+
+        // Standard colors
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -57,6 +74,19 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-accent': 'var(--gradient-accent)',
+      },
+      boxShadow: {
+        'club': 'var(--shadow-club)',
+        'elevated': 'var(--shadow-elevated)',
+      },
+      transitionTimingFunction: {
+        'smooth': 'var(--transition-smooth)',
+        'bounce': 'var(--transition-bounce)',
       },
       borderRadius: {
         lg: "var(--radius)",

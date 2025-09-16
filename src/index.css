@@ -2,41 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* May Lomin FC Design System - Professional Football Club */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Club Colors */
+    --club-primary: 214 95% 45%;        /* Royal Blue */
+    --club-primary-dark: 214 95% 35%;    /* Darker Blue */
+    --club-secondary: 0 0% 100%;         /* Pure White */
+    --club-accent: 45 100% 50%;          /* Gold */
+    --club-success: 142 76% 36%;         /* Green for wins */
+    --club-warning: 25 95% 53%;          /* Orange for draws */
+    --club-danger: 0 84% 60%;            /* Red for losses */
 
+    /* Background System */
+    --background: 0 0% 100%;
+    --background-secondary: 214 32% 96%;
+    --background-dark: 214 95% 8%;
+    --foreground: 214 32% 12%;
+    --foreground-muted: 214 16% 46%;
+
+    /* Component Colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 214 32% 12%;
+    --card-border: 214 32% 91%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 214 32% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 214 95% 45%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 214 32% 96%;
+    --secondary-foreground: 214 32% 12%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 214 32% 96%;
+    --muted-foreground: 214 16% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 100% 50%;
+    --accent-foreground: 214 32% 12%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 214 95% 45%;
 
-    --radius: 0.5rem;
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214 95% 45%) 0%, hsl(214 95% 35%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(214 95% 8%) 0%, hsl(214 95% 15%) 50%, hsl(214 95% 25%) 100%);
+    --gradient-accent: linear-gradient(90deg, hsl(45 100% 50%) 0%, hsl(35 100% 50%) 100%);
+
+    /* Shadows */
+    --shadow-club: 0 10px 40px -10px hsl(214 95% 45% / 0.3);
+    --shadow-elevated: 0 20px 60px -10px hsl(214 32% 12% / 0.15);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
