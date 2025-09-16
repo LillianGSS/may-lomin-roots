@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Trophy, Users } from "lucide-react";
-import heroImage from "@/assets/hero-football.jpg";
+import heroImage from "@/assets/hero-football-tigray.jpg";
 import logo from "@/assets/may-lomin-logo.png";
 
 const Hero = () => {
