@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Trophy, Users } from "lucide-react";
 import heroImage from "@/assets/hero-football.jpg";
+import logo from "@/assets/may-lomin-logo.png";
 
 const Hero = () => {
   return (
@@ -18,8 +19,8 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Club Badge */}
           <div className="mb-8">
-            <div className="w-24 h-24 mx-auto bg-gradient-primary rounded-full flex items-center justify-center shadow-club">
-              <span className="text-club-secondary font-bold text-4xl font-oswald">ML</span>
+            <div className="w-32 h-32 mx-auto bg-club-secondary rounded-full flex items-center justify-center shadow-club p-4">
+              <img src={logo} alt="May Lomin FC" className="w-full h-full object-contain" />
             </div>
           </div>
 

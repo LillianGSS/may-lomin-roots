@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/may-lomin-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,8 +21,8 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center">
-              <span className="text-club-secondary font-bold text-xl">ML</span>
+            <div className="w-12 h-12 rounded-full flex items-center justify-center bg-club-secondary p-1">
+              <img src={logo} alt="May Lomin FC" className="w-full h-full object-contain" />
             </div>
             <div>
               <h1 className="font-oswald font-bold text-xl text-club-secondary">

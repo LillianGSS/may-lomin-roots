@@ -8,21 +8,22 @@
 
 @layer base {
   :root {
-    /* Club Colors */
-    --club-primary: 214 95% 45%;        /* Royal Blue */
-    --club-primary-dark: 214 95% 35%;    /* Darker Blue */
+    /* Club Colors - May Lomin FC Official */
+    --club-primary: 120 60% 35%;        /* Forest Green */
+    --club-primary-dark: 120 70% 25%;    /* Darker Forest Green */
     --club-secondary: 0 0% 100%;         /* Pure White */
-    --club-accent: 45 100% 50%;          /* Gold */
-    --club-success: 142 76% 36%;         /* Green for wins */
-    --club-warning: 25 95% 53%;          /* Orange for draws */
+    --club-accent: 50 100% 50%;          /* Bright Yellow/Gold */
+    --club-light-green: 85 60% 45%;      /* Light Grass Green */
+    --club-success: 120 60% 35%;         /* Match primary for wins */
+    --club-warning: 50 100% 50%;         /* Yellow for draws */
     --club-danger: 0 84% 60%;            /* Red for losses */
 
     /* Background System */
     --background: 0 0% 100%;
-    --background-secondary: 214 32% 96%;
-    --background-dark: 214 95% 8%;
-    --foreground: 214 32% 12%;
-    --foreground-muted: 214 16% 46%;
+    --background-secondary: 85 30% 95%;
+    --background-dark: 120 70% 8%;
+    --foreground: 120 20% 15%;
+    --foreground-muted: 120 10% 40%;
 
     /* Component Colors */
     --card: 0 0% 100%;
@@ -32,33 +33,33 @@
     --popover: 0 0% 100%;
     --popover-foreground: 214 32% 12%;
 
-    --primary: 214 95% 45%;
+    --primary: 120 60% 35%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 214 32% 96%;
-    --secondary-foreground: 214 32% 12%;
+    --secondary: 85 30% 95%;
+    --secondary-foreground: 120 20% 15%;
 
     --muted: 214 32% 96%;
     --muted-foreground: 214 16% 46%;
 
-    --accent: 45 100% 50%;
-    --accent-foreground: 214 32% 12%;
+    --accent: 50 100% 50%;
+    --accent-foreground: 120 20% 15%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 214 95% 45%;
+    --ring: 120 60% 35%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(214 95% 45%) 0%, hsl(214 95% 35%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(214 95% 8%) 0%, hsl(214 95% 15%) 50%, hsl(214 95% 25%) 100%);
-    --gradient-accent: linear-gradient(90deg, hsl(45 100% 50%) 0%, hsl(35 100% 50%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(120 60% 35%) 0%, hsl(120 70% 25%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(85 60% 45%) 0%, hsl(120 60% 35%) 50%, hsl(120 70% 25%) 100%);
+    --gradient-accent: linear-gradient(90deg, hsl(50 100% 50%) 0%, hsl(45 100% 45%) 100%);
 
     /* Shadows */
-    --shadow-club: 0 10px 40px -10px hsl(214 95% 45% / 0.3);
-    --shadow-elevated: 0 20px 60px -10px hsl(214 32% 12% / 0.15);
+    --shadow-club: 0 10px 40px -10px hsl(120 60% 35% / 0.3);
+    --shadow-elevated: 0 20px 60px -10px hsl(120 20% 15% / 0.15);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
