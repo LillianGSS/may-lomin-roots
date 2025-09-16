@@ -1,4 +1,5 @@
 import { Separator } from "@/components/ui/separator";
+import logo from "@/assets/may-lomin-logo.png";
 
 const Footer = () => {
   const footerLinks = {
@@ -36,8 +37,8 @@ const Footer = () => {
           {/* Club Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center">
-                <span className="text-club-secondary font-bold text-2xl font-oswald">ML</span>
+              <div className="w-12 h-12 rounded-full flex items-center justify-center bg-club-secondary p-1">
+                <img src={logo} alt="May Lomin FC" className="w-full h-full object-contain" />
               </div>
               <div>
                 <h3 className="font-oswald font-bold text-xl">May Lomin FC</h3>
