@@ -26,7 +26,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="font-oswald font-bold text-xl text-club-secondary">
-                May Lomin FC
+                ማይሎሚን ዓብይ ዓዲ Maylomin Abi Adi FC
               </h1>
               <p className="text-xs text-foreground-muted font-inter">
                 Professional Football Club

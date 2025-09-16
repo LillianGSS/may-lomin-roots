@@ -26,7 +26,8 @@ const Hero = () => {
 
           {/* Main Heading */}
           <h1 className="font-oswald font-bold text-5xl md:text-7xl text-club-secondary mb-6 leading-tight">
-            MAY LOMIN
+            ማይሎሚን ዓብይ ዓዲ
+            <span className="block text-club-accent">MAYLOMIN ABI ADI</span>
             <span className="block text-club-accent">FOOTBALL CLUB</span>
           </h1>
 

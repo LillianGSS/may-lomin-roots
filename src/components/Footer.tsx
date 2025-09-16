@@ -41,12 +41,12 @@ const Footer = () => {
                 <img src={logo} alt="May Lomin FC" className="w-full h-full object-contain" />
               </div>
               <div>
-                <h3 className="font-oswald font-bold text-xl">May Lomin FC</h3>
+                <h3 className="font-oswald font-bold text-xl">ማይሎሚን ዓብይ ዓዲ Maylomin Abi Adi FC</h3>
                 <p className="text-sm text-club-secondary/70 font-inter">Professional Football Club</p>
               </div>
             </div>
             <p className="text-club-secondary/80 font-inter mb-6 leading-relaxed">
-              Established in 2019, May Lomin Football Club represents excellence, passion, and community spirit. 
+              Established in 2019, ማይሎሚን ዓብይ ዓዲ Maylomin Abi Adi Football Club represents excellence, passion, and community spirit. 
               We're more than a team - we're a family united by our love for the beautiful game.
             </p>
             <div className="flex space-x-4">
@@ -137,7 +137,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-6">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-club-secondary/60 font-inter text-sm">
-            © 2024 May Lomin Football Club. All rights reserved.
+            © 2024 ማይሎሚን ዓብይ ዓዲ Maylomin Abi Adi Football Club. All rights reserved.
           </div>
           <div className="flex space-x-6 text-club-secondary/60 font-inter text-sm">
             <a href="#" className="hover:text-club-accent transition-colors">Privacy Policy</a>
