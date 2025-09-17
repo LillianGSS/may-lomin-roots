@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Mail, Clock } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
@@ -10,11 +10,6 @@ const Contact = () => {
       icon: MapPin,
       title: "Stadium Address",
       details: ["May Lomin abi adi Stadium", "Tigray Region", "Ethiopia"]
-    },
-    {
-      icon: Phone,
-      title: "Phone Numbers",
-      details: ["+44 (0) 20 1234 5678", "+44 (0) 20 1234 5679 (Tickets)"]
     },
     {
       icon: Mail,
