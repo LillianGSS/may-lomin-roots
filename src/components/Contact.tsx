@@ -9,7 +9,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Stadium Address",
-      details: ["May Lomin Stadium", "Football Avenue, Sports District", "London, ML1 2FC"]
+      details: ["May Lomin abi adi Stadium", "Tigray Region", "Ethiopia"]
     },
     {
       icon: Phone,
