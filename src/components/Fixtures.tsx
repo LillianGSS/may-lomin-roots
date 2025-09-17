@@ -24,7 +24,7 @@ const Fixtures = () => {
     },
     {
       id: 3,
-      opponent: "Mekelle 7 Enderta",
+      opponent: "Mekelle 70 Enderta",
       date: "2024-09-13",
       time: "16:00",
       venue: "Home Stadium",
