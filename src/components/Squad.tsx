@@ -1,5 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import teamPhoto1 from "@/assets/team-photo-1.jpg";
+import teamPhoto2 from "@/assets/team-photo-2.jpg";
+import teamPhoto3 from "@/assets/team-photo-3.jpg";
+import teamPhoto4 from "@/assets/team-photo-4.jpg";
+import teamPhoto5 from "@/assets/team-photo-5.jpg";
 
 const Squad = () => {
   const players = [
@@ -121,6 +127,97 @@ const Squad = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Team Photos Gallery */}
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h3 className="font-oswald font-bold text-3xl md:text-4xl text-foreground mb-4">
+              TEAM IN ACTION
+            </h3>
+            <p className="text-lg text-foreground-muted font-inter max-w-2xl mx-auto">
+              Capturing moments of passion, dedication, and teamwork on and off the field
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <Carousel className="w-full">
+              <CarouselContent>
+                <CarouselItem>
+                  <div className="relative group">
+                    <img 
+                      src={teamPhoto1} 
+                      alt="May Lomin FC team celebration after match"
+                      className="w-full h-[400px] md:h-[500px] object-cover rounded-2xl shadow-club"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl"></div>
+                    <div className="absolute bottom-6 left-6 text-white">
+                      <h4 className="font-oswald font-bold text-xl mb-2">Team Celebration</h4>
+                      <p className="font-inter text-sm opacity-90">Victory brings us together</p>
+                    </div>
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="relative group">
+                    <img 
+                      src={teamPhoto2} 
+                      alt="May Lomin FC players lineup before match"
+                      className="w-full h-[400px] md:h-[500px] object-cover rounded-2xl shadow-club"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl"></div>
+                    <div className="absolute bottom-6 left-6 text-white">
+                      <h4 className="font-oswald font-bold text-xl mb-2">Pre-Match Lineup</h4>
+                      <p className="font-inter text-sm opacity-90">Ready for battle</p>
+                    </div>
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="relative group">
+                    <img 
+                      src={teamPhoto3} 
+                      alt="May Lomin FC team in red jerseys"
+                      className="w-full h-[400px] md:h-[500px] object-cover rounded-2xl shadow-club"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl"></div>
+                    <div className="absolute bottom-6 left-6 text-white">
+                      <h4 className="font-oswald font-bold text-xl mb-2">Home Colors</h4>
+                      <p className="font-inter text-sm opacity-90">Proud in our red jerseys</p>
+                    </div>
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="relative group">
+                    <img 
+                      src={teamPhoto4} 
+                      alt="May Lomin FC training session"
+                      className="w-full h-[400px] md:h-[500px] object-cover rounded-2xl shadow-club"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl"></div>
+                    <div className="absolute bottom-6 left-6 text-white">
+                      <h4 className="font-oswald font-bold text-xl mb-2">Training Session</h4>
+                      <p className="font-inter text-sm opacity-90">Building strength and skill</p>
+                    </div>
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="relative group">
+                    <img 
+                      src={teamPhoto5} 
+                      alt="May Lomin FC team training drills"
+                      className="w-full h-[400px] md:h-[500px] object-cover rounded-2xl shadow-club"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl"></div>
+                    <div className="absolute bottom-6 left-6 text-white">
+                      <h4 className="font-oswald font-bold text-xl mb-2">Team Unity</h4>
+                      <p className="font-inter text-sm opacity-90">Training together, winning together</p>
+                    </div>
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
+          </div>
         </div>
 
         {/* Call to Action */}
