@@ -11,67 +11,80 @@ const Squad = () => {
   const players = [
     {
       id: 1,
-      name: "Marcus Johnson",
+      name: "በረሁ",
       position: "Goalkeeper",
       number: 1,
-      age: 28,
-      nationality: "England"
+      age: 25
     },
     {
       id: 2,
-      name: "Diego Rodriguez",
+      name: "ስንድኮም",
       position: "Defender",
-      number: 4,
-      age: 26,
-      nationality: "Spain"
+      number: 2,
+      age: 23
     },
     {
       id: 3,
-      name: "James Mitchell",
+      name: "ተስፋዪ",
       position: "Defender",
-      number: 5,
-      age: 24,
-      nationality: "Scotland"
+      number: 3,
+      age: 24
     },
     {
       id: 4,
-      name: "Alessandro Costa",
-      position: "Midfielder",
-      number: 8,
-      age: 29,
-      nationality: "Italy"
+      name: "ሃፍቶም",
+      position: "Defender",
+      number: 4,
+      age: 26
     },
     {
       id: 5,
-      name: "Kevin O'Brien",
-      position: "Midfielder",
-      number: 10,
-      age: 27,
-      nationality: "Ireland"
+      name: "ሙኪ",
+      position: "Defender",
+      number: 5,
+      age: 22
     },
     {
       id: 6,
-      name: "Thierry Dubois",
-      position: "Forward",
-      number: 9,
-      age: 25,
-      nationality: "France"
+      name: "ሃይሉ",
+      position: "Midfielder",
+      number: 6,
+      age: 27
     },
     {
       id: 7,
-      name: "Lucas Silva",
-      position: "Forward",
-      number: 11,
-      age: 23,
-      nationality: "Brazil"
+      name: "ቢልል",
+      position: "Midfielder",
+      number: 7,
+      age: 24
     },
     {
       id: 8,
-      name: "Ahmed Hassan",
+      name: "ቢንያም",
       position: "Midfielder",
-      number: 6,
-      age: 30,
-      nationality: "Egypt"
+      number: 8,
+      age: 25
+    },
+    {
+      id: 9,
+      name: "ሃንግ",
+      position: "Forward",
+      number: 9,
+      age: 23
+    },
+    {
+      id: 10,
+      name: "ክሊል",
+      position: "Forward",
+      number: 10,
+      age: 26
+    },
+    {
+      id: 11,
+      name: "ተዓይሶስ",
+      position: "Forward",
+      number: 11,
+      age: 24
     }
   ];
 
@@ -122,7 +135,6 @@ const Squad = () => {
 
                 <div className="space-y-1 text-sm text-foreground-muted font-inter">
                   <div>Age: {player.age}</div>
-                  <div>Nationality: {player.nationality}</div>
                 </div>
               </CardContent>
             </Card>
