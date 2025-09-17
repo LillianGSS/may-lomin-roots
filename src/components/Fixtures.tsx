@@ -6,7 +6,7 @@ const Fixtures = () => {
   const fixtures = [
     {
       id: 1,
-      opponent: "City United FC",
+      opponent: "Shul Shire",
       date: "2024-09-20",
       time: "15:00",
       venue: "Home Stadium",
@@ -15,32 +15,32 @@ const Fixtures = () => {
     },
     {
       id: 2,
-      opponent: "Rangers Athletic",
+      opponent: "Adwa Soloda",
       date: "2024-09-27",
       time: "18:30",
-      venue: "Rangers Ground",
+      venue: "Adwa Stadium",
       isHome: false,
       status: "upcoming"
     },
     {
       id: 3,
-      opponent: "Victory Sports",
+      opponent: "Mekelle 7 Enderta",
       date: "2024-09-13",
       time: "16:00",
       venue: "Home Stadium",
       isHome: true,
       status: "played",
-      result: { home: 2, away: 1, outcome: "win" }
+      result: { home: 0, away: 0, outcome: "draw" }
     },
     {
       id: 4,
-      opponent: "Elite FC",
+      opponent: "Aksum",
       date: "2024-09-06",
       time: "20:00",
-      venue: "Elite Stadium",
+      venue: "Aksum Stadium",
       isHome: false,
       status: "played",
-      result: { home: 1, away: 1, outcome: "draw" }
+      result: { home: 0, away: 0, outcome: "draw" }
     }
   ];
 
