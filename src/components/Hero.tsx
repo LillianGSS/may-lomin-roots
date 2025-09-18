@@ -1,17 +1,67 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Trophy, Users } from "lucide-react";
-import heroImage from "@/assets/hero-team-lineup.jpg";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
 import logo from "@/assets/may-lomin-logo.png";
 
+// Import team images
+import teamSlide1 from "@/assets/team-slide-1.jpg";
+import teamSlide2 from "@/assets/team-slide-2.jpg";
+import teamSlide3 from "@/assets/team-slide-3.jpg";
+import teamSlide4 from "@/assets/team-slide-4.jpg";
+import teamSlide5 from "@/assets/team-slide-5.jpg";
+import teamSlide6 from "@/assets/team-slide-6.jpg";
+import teamSlide7 from "@/assets/team-slide-7.jpg";
+
 const Hero = () => {
+  const [api, setApi] = useState<any>();
+  
+  const teamImages = [
+    teamSlide1,
+    teamSlide2, 
+    teamSlide3,
+    teamSlide4,
+    teamSlide5,
+    teamSlide6,
+    teamSlide7
+  ];
+
+  // Auto-slide functionality
+  useEffect(() => {
+    if (!api) return;
+
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 4000); // Change slide every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [api]);
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-hero/90"></div>
+      {/* Background Carousel */}
+      <div className="absolute inset-0">
+        <Carousel
+          setApi={setApi}
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full h-full"
+        >
+          <CarouselContent className="h-screen">
+            {teamImages.map((image, index) => (
+              <CarouselItem key={index} className="relative h-screen">
+                <div 
+                  className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                  style={{ backgroundImage: `url(${image})` }}
+                >
+                  <div className="absolute inset-0 bg-gradient-hero/90"></div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
       </div>
 
       {/* Content */}
