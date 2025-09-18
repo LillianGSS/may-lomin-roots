@@ -15,6 +15,18 @@ const Header = () => {
     { name: "Contact", href: "#contact" },
   ];
 
+  const handleNavClick = (href: string) => {
+    const targetId = href.substring(1); // Remove the # from href
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    setIsMenuOpen(false); // Close mobile menu if open
+  };
+
   return (
     <header className="bg-background-dark/95 backdrop-blur-md fixed w-full top-0 z-50 border-b border-club-primary/20">
       <div className="container mx-auto px-4">
@@ -37,13 +49,13 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             {navigation.map((item) => (
-              <a
+              <button
                 key={item.name}
-                href={item.href}
-                className="text-club-secondary hover:text-club-accent transition-colors font-inter font-medium"
+                onClick={() => handleNavClick(item.href)}
+                className="text-club-secondary hover:text-club-accent transition-colors font-inter font-medium bg-transparent border-none cursor-pointer"
               >
                 {item.name}
-              </a>
+              </button>
             ))}
           </nav>
 
@@ -63,14 +75,13 @@ const Header = () => {
           <div className="md:hidden bg-background-dark border-t border-club-primary/20">
             <nav className="py-4 space-y-2">
               {navigation.map((item) => (
-                <a
+                <button
                   key={item.name}
-                  href={item.href}
-                  className="block px-4 py-2 text-club-secondary hover:text-club-accent hover:bg-club-primary/10 transition-colors font-inter"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => handleNavClick(item.href)}
+                  className="block w-full text-left px-4 py-2 text-club-secondary hover:text-club-accent hover:bg-club-primary/10 transition-colors font-inter bg-transparent border-none cursor-pointer"
                 >
                   {item.name}
-                </a>
+                </button>
               ))}
             </nav>
           </div>
